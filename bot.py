@@ -10,7 +10,6 @@ Requirements (example):
 
 import logging
 import sqlite3
-import pandas as pd
 import os
 import asyncio
 from datetime import datetime, timedelta
@@ -743,4 +742,5 @@ if __name__ == "__main__":
         logger.info("Starting bot...")
         executor.start_polling(dp, skip_updates=True)
     finally:
+
         conn.close()
